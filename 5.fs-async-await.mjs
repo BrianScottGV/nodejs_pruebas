@@ -4,6 +4,8 @@
 //const { promisify } = require('node:util');
 //const readFilePrimise = promisify('fs.readfile');
 
+//ASINCRONO SECUENCIAL
+
 import { readFile } from "node:fs/promises";
 
 console.log('Leyendo el primer archivo...');

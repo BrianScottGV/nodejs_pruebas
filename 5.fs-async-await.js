@@ -4,6 +4,9 @@
 //const { promisify } = require('node:util');
 //const readFilePrimise = promisify('fs.readfile');
 
+
+//ASINCRONO SECUENCIAL
+
 const { readFile } = require("node:fs/promises");
 
 

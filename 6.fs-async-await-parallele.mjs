@@ -4,7 +4,7 @@
 //const { promisify } = require('node:util');
 //const readFilePrimise = promisify('fs.readfile');
 
-//ASYNCRONO PARARELO
+//ASINCRONO PARARELO
 
 Promise.all([
     readFile('./archivo.txt', 'utf-8'),

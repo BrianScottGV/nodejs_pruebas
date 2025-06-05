@@ -1,21 +1,11 @@
-// AYNCRONO CON CALL BACKS
+// Sincrono secuencials
 
 const fs = require('node:fs');
 
 console.log('Leyendo el primer archivo...');
-fs.readFile('./archivo.txt', 'utf-8', (err,text) => {
-    console.log(text);
-    if (err) {
-        console.error('Error al leer el archivo:', err);
-        return;
-    }
-})
+const text = fs.readFileSync('./archivo.txt', 'utf-8')
+console.log(text);
 
 console.log('Leyendo el segundo archivo...');
-fs.readFile('./archivo2.txt', 'utf-8', (err, text2) => {
-    console.log(text2);
-    if (err) {
-        console.error('Error al leer el segundo archivo:', err);
-        return;
-    }
-});
+const secondText = fs.readFileSync('./archivo2.txt', 'utf-8')
+console.log(secondText);
