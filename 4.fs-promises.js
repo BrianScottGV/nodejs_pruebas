@@ -19,6 +19,6 @@ fs.readFile('./archivo.txt', 'utf-8')
 
 console.log('Leyendo el segundo archivo...');
 fs.readFile('./archivo2.txt', 'utf-8')
-    .then(text) {
+    .then(text=> {
         console.log(text);
-    }
+    })
